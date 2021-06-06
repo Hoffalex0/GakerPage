@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>GAKER.DE - Home</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.l-no-horizontal-scroll {overflow-x: hidden}
+.logo {
+
+  background-image: url('https://cdn.pixabay.com/photo/2016/03/09/15/28/gras-1246662_960_720.jpg') ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding: 200px;
+    top: -9999px;
+    bottom: -9999px;
+    left: -9999px;
+    right: -9999px;
+    margin: auto;
+}
+ /* Navbar container */
+ .navbar {
+  overflow: hidden;
+  background-color: green;
+  font-family: Arial;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: lightskyblue;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+} 
+
+
+/* Style the content */
+.content {
+  background-color: rgb(215, 247, 227);
+  padding: 500px
+  
+}
+
+/* Style the footer */
+.footer {
+  background-color: #488b29;
+  padding: 500px
+}
+</style>
+</head>
+<body>
+  <div class="logo">
+    <div style="background-image: url('https://cdn.pixabay.com/photo/2018/06/29/22/45/wheat-3506758_960_720.jpg');"> 
+    <img width="200" height="200" src="https://image.jimcdn.com/app/cms/image/transf/dimension=270x10000:format=png/path/s5b23be96fddad815/image/ia02a661017ff1497/version/1622655649/image.png"></img>
+    <iframe width='300' height='255' name='FC1' style='border:1px solid;border-radius:12px;border-color:transparent;'
+     src='https://api.wetteronline.de/wetterwidget?gid=x5211&modeid=FC1&seourl=buchholz&locationname=Buchholz&lang=de'></iframe>
+  </div>
+
+  <div class="navbar">
+    <a href="">Home</a>
+    <a href="#news">Blog</a>
+    <div class="dropdown">
+      <button class="dropbtn">Projekte
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="#">Der Acker</a>
+        <a href="#">Die Hühner</a>
+        <a href="#">Die Bienen</a>
+        <a href="#">Der Wald</a>
+        <a href="#">Scratch</a>
+      </div>
+    </div>
+    <a href="#news">About us</a>
+    <a href="#news">GaK Website</a>
+    <a href="#news">Image Upload</a>
+  </div> 
+
+<div class="content">
+  
+  <img class="mySlides" src="https://cdn.pixabay.com/photo/2018/07/10/10/25/pepper-3528279_960_720.jpg">
+  <img class="mySlides" src="https://cdn.pixabay.com/photo/2020/02/24/06/01/sunflower-4875296_960_720.jpg">
+  <img class="mySlides" src="https://cdn.pixabay.com/photo/2019/06/18/16/55/black-background-4282794_960_720.jpg">
+  <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+<button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+<script>
+var slideIndex = 1;
+  showDivs(slideIndex);
+  
+  function plusDivs(n) {
+    showDivs(slideIndex += n);
+  }
+  
+  function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length} ;
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    x[slideIndex-1].style.display = "block";
+  }</script>
+
+</div>
+
+<div class="footer">
+  <Font Color="#fffff">
+  <p>Abonniert uns auf Instagram und Youtube.</p>
+  
+</div>
+
+</body>
+</html>
